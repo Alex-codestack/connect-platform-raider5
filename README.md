@@ -1,5 +1,6 @@
 # Connect Platform - Project 2
-## Team Name/Number: Raider5
+## Team Name/Number
+Raider5
 ## Team Members
 Jacie Sullins
 Brandon Yarbough
