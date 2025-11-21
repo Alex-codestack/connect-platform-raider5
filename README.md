@@ -1,6 +1,9 @@
 # Connect Platform - Project 2
 ## Team Name/Number: Raider5
 ## Team Members
+Jacie Sullins
+Brandon Yarbough
+David Rojas
 ## Project Description
 Prototype website to help connect college students to the engineering job market.
 ## Pages Implemented
