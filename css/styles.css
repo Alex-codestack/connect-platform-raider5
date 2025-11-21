@@ -1,4 +1,57 @@
+/* Keep page from hiding behind fixed header */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  /* this will be adjusted once we know the header height */
+  padding-top: 70px;
+}
+
+/* ===== Navigation Bar ===== */
+
+/* This wraps the nav and keeps it stuck at the top */
+.site-header {
+  position: fixed;   /* makes it stay at the top when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;     /* keeps it above other content */
+}
+
+/* Actual nav bar styling */
+.main-nav {
+  display: flex;                 /* put logo on left, links on right */
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+
+  /* background similar to your Figma red strip */
+  background: linear-gradient(to right, #b30000, #ff0000);
+  color: #ffffff;
+}
+
+/* Logo text */
+.nav-logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* List of links (Home, About, etc.) */
+.nav-links {
+  list-style: none;   /* remove bullets */
+  display: flex;
+  gap: 1.5rem;        /* spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual link appearance */
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  text-decoration: underline;
 }
