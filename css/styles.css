@@ -107,3 +107,103 @@ body {
   max-width: 350px;
   border-radius: 12px;
 }
+
+/* ===== VALUE PROPOSITIONS ===== */
+.value-props {
+  padding: 3rem 2rem;
+  background: #ffffff;
+}
+
+.value-props h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.value-columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.value-card {
+  flex: 1 1 250px;
+  background: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.value-card h3 {
+  margin-top: 0;
+}
+
+.value-card ul {
+  padding-left: 1.2rem;
+}
+
+/* ===== HOW IT WORKS ===== */
+.how-it-works {
+  padding: 3rem 2rem;
+  background: #ececec;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.steps {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  flex: 1 1 200px;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.step-number {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: #b30000;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  padding: 1rem 2rem;
+  background: #222222;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
