@@ -552,3 +552,135 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* =======================
+   PROJECT LISTINGS PAGE
+   ======================= */
+
+.listings-main {
+  padding: 5rem 2rem 2rem;
+}
+
+/* Page header above filters/grid */
+.page-header {
+  margin-bottom: 1.5rem;
+}
+
+.page-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.page-header p {
+  margin: 0.15rem 0;
+}
+
+.project-count {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Layout: sidebar + grid */
+.listings-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Filters sidebar */
+.filters-sidebar {
+  flex: 1;
+  max-width: 280px;
+  background: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.filters-sidebar h2 {
+  margin-top: 0;
+}
+
+.filters-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filters-form input[type="text"],
+.filters-form input[type="number"],
+.filters-form select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+.filters-form h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.duration-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.filter-button {
+  margin-top: 0.75rem;
+}
+
+/* Listings area */
+.project-listings {
+  flex: 3;
+}
+
+/* Grid of project cards */
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Make company logo smaller in listing cards */
+.small-logo {
+  width: 32px;
+  height: 32px;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.page-btn,
+.page-number {
+  border: 1px solid #ccc;
+  background: #ffffff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.page-number.current {
+  background: #b30000;
+  color: #ffffff;
+  border-color: #b30000;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .listings-layout {
+    flex-direction: column;
+  }
+
+  .filters-sidebar {
+    max-width: 100%;
+  }
+}
