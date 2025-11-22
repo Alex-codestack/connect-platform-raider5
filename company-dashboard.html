@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScholarMate – Company Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-logo">
+        <span>ScholarMate</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="student-dashboard.html">For Students</a></li>
+        <li><a href="company-dashboard.html">For Companies</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dashboard-main">
+
+    <!-- 1. Company Dashboard Header -->
+    <section class="dashboard-header company-header">
+      <div class="company-header-left">
+        <div class="company-logo-placeholder"></div>
+        <div>
+          <h1>Red Raider Technologies</h1>
+          <p>Manage your projects, review applicants, and post new opportunities.</p>
+        </div>
+      </div>
+
+      <div class="company-stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Projects Posted</span>
+          <span class="stat-value">8</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Applications Received</span>
+          <span class="stat-value">34</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Active Projects</span>
+          <span class="stat-value">3</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-layout">
+
+      <!-- MAIN COLUMN -->
+      <div class="dashboard-main-column">
+
+        <!-- 3. Post New Project -->
+        <section class="post-project">
+          <h2>Post a New Project</h2>
+
+          <form class="project-form">
+
+            <label>Project Title</label>
+            <input type="text" placeholder="Enter project title">
+
+            <label>Description</label>
+            <textarea placeholder="Describe the project"></textarea>
+
+            <label>Skills Required</label>
+            <div class="checkbox-list">
+              <label><input type="checkbox"> HTML</label>
+              <label><input type="checkbox"> CSS</label>
+              <label><input type="checkbox"> JavaScript</label>
+              <label><input type="checkbox"> Python</label>
+            </div>
+
+            <label>Duration</label>
+            <select>
+              <option>8 weeks</option>
+              <option>12 weeks</option>
+              <option>16 weeks</option>
+            </select>
+
+            <label>Compensation ($)</label>
+            <input type="number" placeholder="e.g. 500">
+
+            <button type="button" class="btn-primary">Submit Project</button>
+          </form>
+        </section>
+
+        <!-- 4. Posted Projects Section -->
+        <section class="posted-projects">
+          <h2>Your Posted Projects</h2>
+
+          <div class="card project-card">
+            <h3>Customer Feedback Dashboard</h3>
+            <p class="company-name">Applications: 12</p>
+            <p class="project-status active">Status: Active</p>
+            <p class="project-date">Posted: Nov 1, 2025</p>
+            <button class="btn-secondary">View Applications</button>
+          </div>
+
+          <div class="card project-card">
+            <h3>Mobile Landing Page</h3>
+            <p class="company-name">Applications: 6</p>
+            <p class="project-status closed">Status: Closed</p>
+            <p class="project-date">Posted: Oct 15, 2025</p>
+            <button class="btn-secondary">View Applications</button>
+          </div>
+
+          <div class="card project-card">
+            <h3>API Integration Helper</h3>
+            <p class="company-name">Applications: 16</p>
+            <p class="project-status active">Status: Active</p>
+            <p class="project-date">Posted: Nov 10, 2025</p>
+            <button class="btn-secondary">View Applications</button>
+          </div>
+
+        </section>
+
+        <!-- 5. Recent Applications -->
+        <section class="recent-applications">
+          <h2>Recent Applications</h2>
+
+          <div class="card application-card">
+            <h3>Alex U.</h3>
+            <p class="company-name">Applied to: Customer Feedback Dashboard</p>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Data Viz</span>
+            </div>
+            <p class="application-date"><strong>Date:</strong> Nov 20, 2025</p>
+
+            <button class="btn-primary">View Profile</button>
+            <button class="btn-secondary">Accept</button>
+            <button class="btn-secondary">Reject</button>
+          </div>
+
+          <div class="card application-card">
+            <h3>Maria S.</h3>
+            <p class="company-name">Applied to: API Integration Helper</p>
+            <div class="skill-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">APIs</span>
+            </div>
+            <p class="application-date"><strong>Date:</strong> Nov 19, 2025</p>
+
+            <button class="btn-primary">View Profile</button>
+            <button class="btn-secondary">Accept</button>
+            <button class="btn-secondary">Reject</button>
+          </div>
+
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 ScholarMate. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">Contact</a>
+    </div>
+  </fo
