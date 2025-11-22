@@ -1,77 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+/* ===== Base page styles ===== */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-top: 70px;   /* space so content isn't hidden behind fixed header */
 }
 
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
+/* ===== Sticky Navigation Bar ===== */
 
-#navbar {
-  position: sticky;
+.site-header {
+  position: fixed;   /* stays at the top while scrolling */
   top: 0;
-  overflow: hidden;
-  background-color: #333;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+/* The red bar */
+.main-nav {
+  display: flex;                 /* logo left, links right */
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+
+  background: linear-gradient(to right, #b30000, #ff0000);
+  color: #ffffff;
+}
+
+/* Logo text */
+.nav-logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Navigation links list */
+.nav-links {
+  list-style: none;   /* no bullets */
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual link styles */
+.nav-links a {
   text-decoration: none;
-  font-size: 17px;
+  color: #ffffff;
+  font-weight: 500;
 }
 
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
+.nav-links a:hover,
+.nav-links a:focus {
+  text-decoration: underline;
 }
-
-#navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.content {
-  padding: 16px;
-}
-
-</style>
-</head>
-<body>
-
-<div class="header">
-  <h2>Scroll Down</h2>
-  <p>Scroll down to see the sticky effect.</p>
-</div>
-
-<div id="navbar">
-  <a class="active" href="javascript:void(0)">Home</a>
-  <a href="javascript:void(0)">News</a>
-  <a href="javascript:void(0)">Contact</a>
-</div>
-
-<div class="content">
-  <h3>Sticky Navigation Example</h3>
-  <p>The navbar will stick to the top when you reach its scroll position.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</div>
-
-</body>
-</html>
