@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScholarMate – Browse Projects</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
+<body>
+
+  <!-- Navigation Bar (same as landing page) -->
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-logo">
+        <span>ScholarMate</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="student-dashboard.html">For Students</a></li>
+        <li><a href="company-dashboard.html">For Companies</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="listings-main">
+
+    <!-- 2. Company Dashboard Header (same pattern as company page) -->
+    <section class="dashboard-header company-header">
+      <div class="company-header-left">
+        <div class="company-logo-placeholder"></div>
+        <div>
+          <h1>Red Raider Technologies</h1>
+          <p>Browse and manage project opportunities available to students.</p>
+        </div>
+      </div>
+
+      <div class="company-stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Projects Posted</span>
+          <span class="stat-value">12</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Applications Received</span>
+          <span class="stat-value">58</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Active Projects</span>
+          <span class="stat-value">5</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Page Header -->
+    <section class="page-header">
+      <h2>Browse Projects</h2>
+      <p>Explore active short-term technical projects posted by companies for students.</p>
+      <p class="project-count">Showing 6 projects</p>
+    </section>
+
+    <!-- 4 + 5. Layout: Filters Sidebar + Project Listings Grid -->
+    <div class="listings-layout">
+
+      <!-- Filters Sidebar -->
+      <aside class="filters-sidebar" aria-label="Project filters">
+        <h2>Filter Projects</h2>
+
+        <form class="filters-form">
+          <label for="search">Search</label>
+          <input id="search" type="text" placeholder="Search projects">
+
+          <h3>Skills</h3>
+          <div class="checkbox-list">
+            <label><input type="checkbox"> HTML</label>
+            <label><input type="checkbox"> CSS</label>
+            <label><input type="checkbox"> JavaScript</label>
+            <label><input type="checkbox"> Python</label>
+            <label><input type="checkbox"> Data Viz</label>
+          </div>
+
+          <h3>Duration</h3>
+          <div class="duration-options">
+            <label><input type="radio" name="duration"> 8 weeks</label>
+            <label><input type="radio" name="duration"> 12 weeks</label>
+            <label><input type="radio" name="duration"> 16 weeks</label>
+          </div>
+
+          <h3>Compensation</h3>
+          <input type="text" placeholder="e.g. $300 - $1000">
+
+          <button type="button" class="btn-secondary filter-button">Apply Filters</button>
+        </form>
+      </aside>
+
+      <!-- Project Listings -->
+      <section class="project-listings">
+        <div class="listings-grid">
+
+          <!-- Card 1 -->
+          <div class="card project-list-card">
+            <div class="card-header-row">
+              <div class="company-logo-placeholder small-logo"></div>
+              <div>
+                <h3>Responsive Marketing Landing Page</h3>
+                <p class="company-name">Lubbock Startups</p>
+              </div>
+            </div>
+            <p class="card-description">
+              Build a mobile-friendly landing page for a new subscription product launch.
+            </p>
+            <p class="card-meta"><strong>Skills:</strong> HTML, CSS, Figma</p>
+            <p class="card-meta"><strong>Duration:</strong> 8 weeks &nbsp; | &nbsp; <strong>Compensation:</strong> $500</p>
+            <button class="btn-primary">View Details</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card project-list-card">
+            <div class="card-header-row">
+              <div class="company-logo-placeholder small-logo"></div>
+              <div>
+                <h3>Student Feedback Dashboard</h3>
+                <p class="company-name">TTU Research Lab</p>
+              </div>
+            </div>
+            <p class="card-description">
+              Create an interactive dashboard to visualize survey results from multiple semesters.
+            </p>
+            <p class="card-meta"><strong>Skills:</strong> JavaScript, Data Viz</p>
+            <p class="card-meta"><strong>Duration:</strong> 12 weeks &nbsp; | &nbsp; <strong>Compensation:</strong> $800</p>
+            <button class="btn-primary">View Details</button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card project-list-card">
+            <div class="card-header-row">
+              <div class="company-logo-placeholder small-logo"></div>
+              <div>
+                <h3>Internal Tools UI Refresh</h3>
+                <p class="company-name">Campus IT Services</p>
+              </div>
+            </div>
+            <p class="card-description">
+              Redesign the UI for existing web tools used by staff to improve usability.
+            </p>
+            <p class="card-meta"><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+            <p class="card-meta"><strong>Duration:</strong> 16 weeks &nbsp; | &nbsp; <strong>Compensation:</strong> $1,000</p>
+            <button class="btn-primary">View Details</button>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card project-list-card">
+            <div class="card-header-row">
+              <div class="company-logo-placeholder small-logo"></div>
+              <div>
+                <h3>Company Directory Website</h3>
+                <p class="company-name">Local Startup Hub</p>
+              </div>
+            </div>
+            <p class="card-description">
+              Build a searchable directory of member companies with filters and profiles.
+            </p>
+            <p class="card-meta"><strong>Skills:</strong> HTML, CSS</p>
+            <p class="card-meta"><strong>Duration:</strong> 8 weeks &nbsp; | &nbsp; <strong>Compensation:</strong> $450</p>
+            <button class="btn-primary">View Details</button>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card project-list-card">
+            <div class="card-header-row">
+              <div class="company-logo-placeholder small-logo"></div>
+              <div>
+                <h3>Customer Support FAQ Page</h3>
+                <p class="company-name">ServiceCo</p>
+              </div>
+            </div>
+            <p class="card-description">
+              Design and implement a modern FAQ page for common customer questions.
+            </p>
+            <p class="card-meta"><strong>Skills:</strong> HTML, CSS</p>
+            <p class="card-meta"><strong>Duration:</strong> 8 weeks &nbsp; | &nbsp; <strong>Compensation:</strong> $300</p>
+            <button class="btn-primary">View Details</button>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card project-list-card">
+            <div class="card-header-row">
+              <div class="company-logo-placeholder small-logo"></div>
+              <div>
+                <h3>Prototype Feedback Form</h3>
+                <p class="company-name">Innovation Lab</p>
+              </div>
+            </div>
+            <p class="card-description">
+              Build a form to collect structured feedback on new prototypes and features.
+            </p>
+            <p class="card-meta"><strong>Skills:</strong> HTML, JavaScript</p>
+            <p class="card-meta"><strong>Duration:</strong> 12 weeks &nbsp; | &nbsp; <strong>Compensation:</strong> $600</p>
+            <button class="btn-primary">View Details</button>
+          </div>
+
+        </div>
+
+        <!-- 6. Pagination (visual only) -->
+        <nav class="pagination" aria-label="Project pages">
+          <button class="page-btn">&laquo; Prev</button>
+          <button class="page-number current">1</button>
+          <button class="page-number">2</button>
+          <button class="page-number">3</button>
+          <button class="page-btn">Next &raquo;</button>
+        </nav>
+      </section>
+
+    </div>
+
+    <!-- simple login target for nav -->
+    <section id="login"></section>
+
+  </main>
+
+  <!-- Footer (same as landing page) -->
+  <footer class="site-footer">
+    <p>&copy; 2025 ScholarMate. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
