@@ -444,3 +444,111 @@ body {
     flex-direction: column;
   }
 }
+
+/* =======================
+   COMPANY DASHBOARD STYLES
+   ======================= */
+
+/* Header layout */
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.company-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.company-logo-placeholder {
+  width: 80px;
+  height: 80px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+/* Stats grid like student dashboard */
+.company-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+/* Post New Project Form */
+.post-project h2 {
+  margin-bottom: 1rem;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.project-form input,
+.project-form textarea,
+.project-form select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.project-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.checkbox-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Posted Projects */
+.posted-projects .project-status.active {
+  color: green;
+  font-weight: bold;
+}
+
+.posted-projects .project-status.closed {
+  color: #b30000;
+  font-weight: bold;
+}
+
+.project-date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Recent Applications */
+.application-card h3 {
+  margin-top: 0;
+}
+
+.application-date {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.application-card button {
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .company-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
