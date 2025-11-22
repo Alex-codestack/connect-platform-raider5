@@ -1,1 +1,209 @@
-<h1>Student Dashboard</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScholarMate – Student Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation bar (same as landing page) -->
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-logo">
+        <span>ScholarMate</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="student-dashboard.html">For Students</a></li>
+        <li><a href="company-dashboard.html">For Companies</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN DASHBOARD CONTENT -->
+  <main class="dashboard-main">
+
+    <!-- 1. Dashboard Header -->
+    <section class="dashboard-header">
+      <div class="dashboard-header-left">
+        <h1>Welcome back, Alex!</h1>
+        <p>Here’s a quick overview of your current projects and opportunities.</p>
+      </div>
+
+      <div class="dashboard-header-right">
+        <div class="profile-pic-placeholder" aria-label="Profile picture"></div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Projects Applied</span>
+            <span class="stat-value">5</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Active Projects</span>
+            <span class="stat-value">2</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Completed</span>
+            <span class="stat-value">3</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Layout: main column + sidebar -->
+    <div class="dashboard-layout">
+
+      <!-- MAIN COLUMN -->
+      <div class="dashboard-main-column">
+
+        <!-- 3. Active Projects Section -->
+        <section class="active-projects">
+          <h2>Active Projects</h2>
+
+          <div class="card project-card">
+            <h3>Responsive Marketing Landing Page</h3>
+            <p class="company-name">Red Raider Startups</p>
+
+            <div class="project-meta">
+              <span>Deadline: Nov 30, 2025</span>
+              <span>Time Remaining: 9 days</span>
+            </div>
+
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 60%;"></div>
+            </div>
+            <p class="progress-text">60% Complete</p>
+
+            <button class="btn-secondary">View Details</button>
+          </div>
+
+          <div class="card project-card">
+            <h3>Student Feedback Data Dashboard</h3>
+            <p class="company-name">TTU Innovation Lab</p>
+
+            <div class="project-meta">
+              <span>Deadline: Dec 15, 2025</span>
+              <span>Time Remaining: 24 days</span>
+            </div>
+
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 25%;"></div>
+            </div>
+            <p class="progress-text">25% Complete</p>
+
+            <button class="btn-secondary">View Details</button>
+          </div>
+        </section>
+
+        <!-- 4. Available Opportunities Section -->
+        <section class="available-opportunities">
+          <h2>Available Opportunities</h2>
+
+          <div class="card opportunity-card">
+            <div class="card-header-row">
+              <div class="company-logo-placeholder"></div>
+              <div>
+                <h3>Newsletter Template Redesign</h3>
+                <p class="company-name">Lubbock Tech Co.</p>
+              </div>
+            </div>
+
+            <p class="card-description">
+              Design and code a reusable email newsletter template for weekly product updates.
+            </p>
+
+            <p class="card-meta"><strong>Skills:</strong> HTML, CSS, Figma</p>
+            <p class="card-meta"><strong>Duration:</strong> 8 weeks</p>
+
+            <button class="btn-primary">Apply Now</button>
+          </div>
+
+          <div class="card opportunity-card">
+            <div class="card-header-row">
+              <div class="company-logo-placeholder"></div>
+              <div>
+                <h3>Internal Tools UI Refresh</h3>
+                <p class="company-name">Campus IT Services</p>
+              </div>
+            </div>
+
+            <p class="card-description">
+              Update the UI for internal tools used by staff and students to improve usability.
+            </p>
+
+            <p class="card-meta"><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+            <p class="card-meta"><strong>Duration:</strong> 12 weeks</p>
+
+            <button class="btn-primary">Apply Now</button>
+          </div>
+
+          <div class="card opportunity-card">
+            <div class="card-header-row">
+              <div class="company-logo-placeholder"></div>
+              <div>
+                <h3>Survey Data Visualization</h3>
+                <p class="company-name">Research Lab Analytics</p>
+              </div>
+            </div>
+
+            <p class="card-description">
+              Build interactive charts to visualize student survey results over time.
+            </p>
+
+            <p class="card-meta"><strong>Skills:</strong> JavaScript, Data Visualization</p>
+            <p class="card-meta"><strong>Duration:</strong> 16 weeks</p>
+
+            <button class="btn-primary">Apply Now</button>
+          </div>
+
+        </section>
+
+      </div>
+
+      <!-- 5. Profile Summary Sidebar -->
+      <aside class="profile-sidebar" aria-label="Student profile summary">
+        <h2>Profile Summary</h2>
+        <p class="student-name">Alex U.</p>
+        <p class="student-major">Computer Science, Junior</p>
+
+        <h3>Skills</h3>
+        <div class="skill-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Python</span>
+        </div>
+
+        <h3>Portfolio</h3>
+        <ul class="portfolio-links">
+          <li><a href="#" target="_blank">GitHub</a></li>
+          <li><a href="#" target="_blank">LinkedIn</a></li>
+        </ul>
+
+        <button class="btn-secondary">Edit Profile</button>
+      </aside>
+
+    </div>
+
+    <!-- simple login anchor target so nav link works -->
+    <section id="login" style="padding: 2rem;"></section>
+
+  </main>
+
+  <!-- Footer (same as landing page) -->
+  <footer class="site-footer">
+    <p>&copy; 2025 ScholarMate. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
