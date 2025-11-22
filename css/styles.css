@@ -207,3 +207,240 @@ body {
   display: flex;
   align-items: center;
 }
+
+/* ===== DASHBOARD GENERAL LAYOUT ===== */
+
+.dashboard-main {
+  padding: 5rem 2rem 2rem; /* extra top because of fixed header */
+}
+
+/* Header: welcome + stats */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header-left h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+.dashboard-header-left p {
+  margin: 0;
+}
+
+/* Profile picture placeholder */
+.profile-pic-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #cccccc;
+  margin-bottom: 0.75rem;
+}
+
+/* Quick stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(80px, 1fr));
+  gap: 0.5rem;
+}
+
+.stat-card {
+  background: #f7f7f7;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.stat-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Main + sidebar layout */
+.dashboard-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.dashboard-main-column {
+  flex: 2;
+}
+
+.profile-sidebar {
+  flex: 1;
+  background: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+/* ===== REUSABLE BUTTONS ===== */
+.btn-primary,
+.btn-secondary {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.btn-primary {
+  background: #b30000;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #333333;
+  border: 1px solid #cccccc;
+}
+
+/* ===== CARD STYLES (projects & opportunities) ===== */
+
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.25s;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.company-name {
+  color: #666666;
+  font-size: 0.9rem;
+}
+
+/* Active projects specifics */
+.active-projects h2,
+.available-opportunities h2 {
+  margin-bottom: 1rem;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #eeeeee;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #b30000;
+}
+
+.progress-text {
+  font-size: 0.85rem;
+  color: #555555;
+  margin: 0 0 0.5rem 0;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #555555;
+}
+
+/* Opportunity cards specifics */
+.card-header-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-logo-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #dddddd;
+}
+
+.card-description {
+  font-size: 0.95rem;
+}
+
+.card-meta {
+  font-size: 0.85rem;
+  margin: 0.15rem 0;
+}
+
+/* Sidebar profile pieces */
+.profile-sidebar h2 {
+  margin-top: 0;
+}
+
+.student-name {
+  font-weight: 700;
+}
+
+.student-major {
+  margin-top: 0;
+  color: #555555;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  border: 1px solid #dddddd;
+}
+
+.portfolio-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.portfolio-links li {
+  margin-bottom: 0.25rem;
+}
+
+.portfolio-links a {
+  color: #b30000;
+  text-decoration: none;
+}
+
+.portfolio-links a:hover {
+  text-decoration: underline;
+}
+
+/* Simple responsiveness */
+@media (max-width: 900px) {
+  .dashboard-header {
+    flex-direction: column;
+  }
+
+  .dashboard-layout {
+    flex-direction: column;
+  }
+}
